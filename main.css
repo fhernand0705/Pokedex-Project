@@ -1,0 +1,43 @@
+/* Styling for the homepage */
+
+html {
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  border-radius: 40px;
+  background-color: lightgray;
+  border: 2px black;
+  @include make-container();
+
+}
+
+img {
+   width: 100%;
+   height: auto;
+   padding: 10%;
+
+}
+
+.pkimg {
+  border: 2px solid black;
+  padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+-#272727
+-#747474
+-#FFE400
+-#14A76C
