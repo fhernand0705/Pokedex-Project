@@ -4,40 +4,38 @@ html {
 
 }
 
+body {
+background-image: url(https://stmed.net/sites/default/files/red-white-wallpapers-25296-4844794.jpg);
+background-size: cover;
+}
+
 h1 {
   text-align: center;
+  font-weight: bold;
+
 }
 
 .container {
-  border-radius: 40px;
-  background-color: lightgray;
-  border: 2px black;
-  @include make-container();
+  margin-top: 8%;
+  margin-bottom: 5%;
 
 }
 
 img {
    width: 100%;
    height: auto;
-   padding: 10%;
-
+   padding: 5%;
+   opacity: .5;
 }
 
-.pkimg {
-  border: 2px solid black;
+img:hover {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+  transition-duration: .7s;
+}
+
+.pk-img {
   padding: 20px;
+  border-radius: 20px;
 
 }
-
-
-
-
-
-
-
-
-
--#272727
--#747474
--#FFE400
--#14A76C
