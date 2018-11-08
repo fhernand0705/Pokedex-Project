@@ -1,8 +1,8 @@
 /* Styling for the homepage */
 
 body {
-/* background-image: url(back4-img.jpg);
-background-size: cover; */
+background-image: url(back4-img.jpg);
+background-size: cover;
 }
 
 .container {
@@ -38,15 +38,14 @@ img {
   border-radius: 20px;
 }
 
-/*styling the practice html page*/
+/* Styling Lugia's Modal */
 
-.pichu-block {
-  background-color: blue;
-  color: white;
-  margin-right: 80%;
-
+#modal1 {
+  /* background-color: rgba(147, 84, 158, 0.73); */
 }
 
-#pichu-img {
-  display: none;
+#lugia-name {
+  border-radius: 5px;
+  background-color: red;
+  margin-right: 25%;
 }

@@ -3,38 +3,92 @@
 <head>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Pokedex Home</title>
+  <title>Pokedex</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
 <body>
 
+<!-- Pokedex logo -->
+
   <section><img src="pokemon2-world.png" class= "logo"</section>
+
+
+<!-- Pokedex image grid -->
 
   <div class="container">
 
   <div class="row">
 
-      <div class="col-lg-3 offset-lg-1 pk-img">
-        <img src="lugia-img.jpeg" class="pic">
-      </div>
-
-      <div class="col-lg-3 offset-lg-1 pk-img">
-        <img src="pichu-img.jpeg" class="pic">
-      </div>
-
-      <div class="col-lg-3 offset-lg-1 pk-img">
-         <img src="entei.jpeg" class="pic">
-      </div>
-
+    <div class="col-lg-3 offset-lg-1 pk-img">
+      <img src="lugia-img.jpeg" class="pic" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="getLugia()">
     </div>
 
+    <div class="col-lg-3 offset-lg-1 pk-img">
+        <img src="pichu-img.jpeg" class="pic" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="getPichu()">
+   </div>
+
+    <div class="col-lg-3 offset-lg-1 pk-img">
+         <img src="entei.jpeg" class="pic" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="getEntei()">
+    </div>
+
+  </div>
 </div>
 
-  <!-- <script src='main.js'></script> -->
+<!-- Sets up modal -->
+
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+
+<!-- Pokedex stats modal/grid -->
+
+<div class="modal-content">
+
+    <div class="modal-body">
+
+  <div class="container-fluid">
+
+    <div class="row" id='modal1'>
+
+        <div class="col-lg-4 offset-lg-3" id='pokeHp'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeAtk'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeDef'></div>
+        <div class="col-lg-6 offset-lg-0" id='pokeAbil1'></div>
+        <div class="col-md-1" id='pokeAbil2'></div>
+        <!-- <img src="lugia_small.png"  class="col-sm-6"> -->
+
+      </div>
+     </div>
+
+    <div class="row" id='modal2'>
+
+        <div class="col-lg-4 offset-lg-3" id='pokeHp'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeAtk'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeDef'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeAbil1'></div>
+        <div class="col-lg-4 offset-lg-3" id='pokeAbil2'></div>
+        <!-- <div src="lugia_small.png" class="col-sm-1"></div> -->
+     </div>
+        </div>
+
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+     </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <script src='main.js'></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   </body>
