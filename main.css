@@ -1,8 +1,8 @@
 /* Styling for the homepage */
 
 body {
-background-image: url(back4-img.jpg);
-background-size: cover;
+/* background-image: url(back4-img.jpg);
+background-size: cover; */
 }
 
 .container {
@@ -36,4 +36,17 @@ img {
 .pk-img:hover {
   padding: 15px;
   border-radius: 20px;
+}
+
+/*styling the practice html page*/
+
+.pichu-block {
+  background-color: blue;
+  color: white;
+  margin-right: 80%;
+
+}
+
+#pichu-img {
+  display: none;
 }
