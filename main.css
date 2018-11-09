@@ -1,7 +1,7 @@
-/* Styling for the homepage */
+/********************** Styling for the homepage ************/
 
 body {
-background-image: url(back4-img.jpg);
+background-image: url(Images/back4-img.jpg);
 background-size: cover;
 }
 
@@ -38,7 +38,7 @@ img {
   border-radius: 20px;
 }
 
-/* Styling for the Modal */
+/************************ Styling for the Modal*****************/
 
 .modal-body {
   background-position: 25%;
