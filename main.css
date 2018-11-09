@@ -41,26 +41,32 @@ img {
 /* Styling the Modal */
 
 .modal-body {
-  /* background-color: rgba(147, 84, 158, 0.73); */
+  background-image: url('trainer-img.jpeg');
+  background-size: cover;
+  background-repeat: repeat;
+  color: rgba(91, 91, 91, 0.9);
+  height: 300px;
+  border-radius: 5px;
+
 }
 
 #pokeHp {
   border-radius: 5px;
   background-color: rgba(228, 50, 10, 0.8);
-  margin-left: 10px;
+  margin-left: 0px;
 }
 #pokeAtk {
   border-radius: 5px;
   background-color: rgba(42, 209, 8, 0.8);
-  margin-left: 10px;
+  margin-left: 0px;
 }
 #pokeDef {
   border-radius: 5px;
   background-color: rgba(10, 71, 228, 0.8);
-  margin-left: 10px;
+  margin-left: 0px;
 }
 #pokeAbil1 {
   border-radius: 5px;
   background-color: rgba(207, 238, 14, 0.8);
-  margin-left: 10px;
+  margin-left: 0px;
 }

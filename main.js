@@ -109,6 +109,7 @@ function getEntei() {
         }
         // console.log(poke);
         allPokemon.push(poke);
+
         printToDom(poke);
 
       }
@@ -130,5 +131,8 @@ function printToDom(poke) {
   pokeAtk.innerHTML = "<b>Attack:</b> " + poke.atk;
   pokeDef.innerHTML = "<b>Defense:</b> " + poke.def;
   pokeAbil1.innerHTML = "<b>Abilities:</b> " + poke.abil1.toUpperCase() + ", " + poke.abil2.toUpperCase();
-  // pokeAbil2.innerHTML = pokemon.abil2.toUpperCase();
+
 }
+
+// var img = document.createElement('img');
+// img.src =
