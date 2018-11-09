@@ -37,6 +37,7 @@ class Pokemon {
             this.atk = atk;
             this.def = def;
             this.abil = [];
+            this.img = img;
         }
 }
 
@@ -50,11 +51,13 @@ function getPichu() {
         data = JSON.parse(this.responseText);
         // console.log(data);
         let poke = {
+          name: data.name,
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
            abil1: data.abilities[0].ability.name,
-           abil2: data.abilities[1].ability.name
+           abil2: data.abilities[1].ability.name,
+             img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png"
         }
         // console.log(poke);
         allPokemon.push(poke);
@@ -75,11 +78,13 @@ function getLugia() {
         data = JSON.parse(this.responseText);
         // console.log(data);
         let poke = {
+          name: data.name,
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
            abil1: data.abilities[0].ability.name,
-           abil2: data.abilities[1].ability.name
+           abil2: data.abilities[1].ability.name,
+             img: "https://cdn.bulbagarden.net/upload/4/44/249Lugia.png"
         }
         // console.log(poke);
         allPokemon.push(poke);
@@ -101,11 +106,13 @@ function getEntei() {
         data = JSON.parse(this.responseText);
         // console.log(data);
         let poke = {
+          name: data.name,
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
            abil1: data.abilities[0].ability.name,
-           abil2: data.abilities[1].ability.name
+           abil2: data.abilities[1].ability.name,
+             img: "https://cdn.bulbagarden.net/upload/f/f9/244Entei.png"
         }
         // console.log(poke);
         allPokemon.push(poke);
@@ -121,18 +128,18 @@ function getEntei() {
 //Prints pokemon properties to the html body
 
 function printToDom(poke) {
+  var image = document.getElementById('image');
+  var pokeName = document.getElementById('pokeName');
   var pokeHp = document.getElementById('pokeHp');
   var pokeAtk = document.getElementById('pokeAtk');
   var pokeDef = document.getElementById('pokeDef');
   var pokeAbil1 = document.getElementById('pokeAbil1');
   var pokeAbil2 = document.getElementById('pokeAbil2');
 
+  pokeName.innerHTML = poke.name.toUpperCase();
   pokeHp.innerHTML = "<b>HP:</b> " + poke.hp;
   pokeAtk.innerHTML = "<b>Attack:</b> " + poke.atk;
   pokeDef.innerHTML = "<b>Defense:</b> " + poke.def;
   pokeAbil1.innerHTML = "<b>Abilities:</b> " + poke.abil1.toUpperCase() + ", " + poke.abil2.toUpperCase();
-
+  image.src = poke.img;
 }
-
-// var img = document.createElement('img');
-// img.src =
