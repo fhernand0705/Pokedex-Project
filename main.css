@@ -38,14 +38,29 @@ img {
   border-radius: 20px;
 }
 
-/* Styling Lugia's Modal */
+/* Styling the Modal */
 
-#modal1 {
+.modal-body {
   /* background-color: rgba(147, 84, 158, 0.73); */
 }
 
-#lugia-name {
+#pokeHp {
   border-radius: 5px;
-  background-color: red;
-  margin-right: 25%;
+  background-color: rgba(228, 50, 10, 0.8);
+  margin-left: 10px;
+}
+#pokeAtk {
+  border-radius: 5px;
+  background-color: rgba(42, 209, 8, 0.8);
+  margin-left: 10px;
+}
+#pokeDef {
+  border-radius: 5px;
+  background-color: rgba(10, 71, 228, 0.8);
+  margin-left: 10px;
+}
+#pokeAbil1 {
+  border-radius: 5px;
+  background-color: rgba(207, 238, 14, 0.8);
+  margin-left: 10px;
 }

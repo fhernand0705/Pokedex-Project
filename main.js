@@ -2,7 +2,6 @@
 
 let allPokemon = [];
 
-
 //Defining trainer class with methods
 
 class Trainer {
@@ -15,11 +14,11 @@ class Trainer {
   }
 
   get(name) {
-     if (name == 'pichu') {
+     if (name == 'pichu' || name == 'Pichu') {
        return getPichu();
-     } else if (name == 'lugia') {
+     } else if (name == 'lugia' || name == 'Lugia') {
        return getLugia();
-     } else if (name == 'entei') {
+     } else if (name == 'entei' || name == 'Entei' ) {
        return getEntei();
      } else {
        console.log('pokemon not found');
@@ -50,22 +49,22 @@ function getPichu() {
         if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText);
         // console.log(data);
-        let pichu = {
+        let poke = {
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
-         abil1: data.abilities[0].ability.name,
-         abil2: data.abilities[1].ability.name
+           abil1: data.abilities[0].ability.name,
+           abil2: data.abilities[1].ability.name
         }
-          // console.log(pokeInfo);
-          allPokemon.push(pichu);
-          printToDom(pichu);
+        // console.log(poke);
+        allPokemon.push(poke);
+        printToDom(poke);
 
+      }
     };
     xhttp.open("GET", "http://fizal.me/pokeapi/api/v2/name/pichu.json", true);
     xhttp.send();
 }
-
 
 //Requesting data on Lugia
 
@@ -75,16 +74,16 @@ function getLugia() {
         if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText);
         // console.log(data);
-        let lugia = {
+        let poke = {
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
            abil1: data.abilities[0].ability.name,
            abil2: data.abilities[1].ability.name
         }
-        // console.log(pokeInfo);
-        allPokemon.push(lugia);
-        printToDom(lugia);
+        // console.log(poke);
+        allPokemon.push(poke);
+        printToDom(poke);
 
       }
     };
@@ -101,16 +100,16 @@ function getEntei() {
         if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText);
         // console.log(data);
-        let entei = {
+        let poke = {
             hp: data.stats[5].base_stat,
            atk: data.stats[4].base_stat,
            def: data.stats[3].base_stat,
            abil1: data.abilities[0].ability.name,
            abil2: data.abilities[1].ability.name
         }
-        // console.log(pokeInfo);
-        allPokemon.push(entei);
-        printToDom(entei);
+        // console.log(poke);
+        allPokemon.push(poke);
+        printToDom(poke);
 
       }
     };
@@ -118,19 +117,18 @@ function getEntei() {
     xhttp.send();
 }
 
-//Prints pokemon attribute to the html screen
+//Prints pokemon properties to the html body
 
-function printToDom(pokemon) {
+function printToDom(poke) {
   var pokeHp = document.getElementById('pokeHp');
   var pokeAtk = document.getElementById('pokeAtk');
   var pokeDef = document.getElementById('pokeDef');
   var pokeAbil1 = document.getElementById('pokeAbil1');
   var pokeAbil2 = document.getElementById('pokeAbil2');
 
-  pokeHp.innerHTML = "HP: " + pokemon.hp;
-  pokeAtk.innerHTML = "Attack: " + pokemon.atk;
-  pokeDef.innerHTML = "Defense: " + pokemon.def;
-  pokeAbil1.innerHTML = "Abilities: " + pokemon.abil1.toUpperCase() + ", ";
-  pokeAbil2.innerHTML = pokemon.abil2.toUpperCase();
-
+  pokeHp.innerHTML = "<b>HP:</b> " + poke.hp;
+  pokeAtk.innerHTML = "<b>Attack:</b> " + poke.atk;
+  pokeDef.innerHTML = "<b>Defense:</b> " + poke.def;
+  pokeAbil1.innerHTML = "<b>Abilities:</b> " + poke.abil1.toUpperCase() + ", " + poke.abil2.toUpperCase();
+  // pokeAbil2.innerHTML = pokemon.abil2.toUpperCase();
 }
