@@ -26,7 +26,7 @@ class Trainer {
    }
 }
 
-let trainer = new Trainer ('Young Master Duck');
+let trainer = new Trainer ('Young Master Fred');
 
 //Defining pokemon class
 
@@ -59,7 +59,7 @@ function getPichu() {
            abil2: data.abilities[1].ability.name,
              img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png"
         }
-        // console.log(poke);
+        console.log(poke);
         allPokemon.push(poke);
         printToDom(poke);
 
@@ -86,7 +86,7 @@ function getLugia() {
            abil2: data.abilities[1].ability.name,
              img: "https://cdn.bulbagarden.net/upload/4/44/249Lugia.png"
         }
-        // console.log(poke);
+        console.log(poke);
         allPokemon.push(poke);
         printToDom(poke);
 

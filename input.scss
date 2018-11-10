@@ -1,4 +1,20 @@
-$font-size: 20px;
+$transition-duration: .7s;
+$transform: scale(1.2, 1.2);
+$primary-border-radius: 5px;
+$secondary-border-radius: 20px;
+$primary-z-index: 1;
+
+//Background colors
+$HP-Color: rgba(173, 32, 1, 0.78);
+$Atk-Color: rgba(41, 205, 7, 0.96);
+$Def-Color: rgba(34, 73, 173, 0.84);
+$Abil-Color: rgba(181, 210, 9, 1);
+
+
+//Font group
+$primary-font-size: 20px;
+$body-font-color: white;
+$pkname-font-color: rgb(195, 4, 4);
 
 
 

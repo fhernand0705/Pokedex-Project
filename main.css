@@ -41,7 +41,6 @@ img {
 /************************ Styling for the Modal*****************/
 
 .modal-body {
-  background-position: 25%;
   color: white;
   height: 300px;
   border-radius: 10px;
@@ -51,36 +50,43 @@ img {
 #pokeHp {
   border-radius: 5px;
   background-color: rgba(173, 32, 1, 0.78);
+  font-family: VT323;
   margin-left: 0px;
-  margin-top: 50px;
-  font-size: 20px;
+  margin-top: 25px;
+  font-size: 22.5px;
 }
 #pokeAtk {
   border-radius: 5px;
   background-color: rgba(41, 205, 7, 0.96);
+  font-family: VT323;
   margin-left: 0px;
-  font-size: 20px;
+  font-size: 22.5px;
 }
 #pokeDef {
   border-radius: 5px;
   background-color: rgba(34, 73, 173, 0.84);
+  font-family: VT323;
   margin-left: 0px;
-  font-size: 20px;
+  font-size: 22.5px;
 }
 #pokeAbil1 {
   border-radius: 5px;
   background-color: rgba(181, 210, 9, 1);
+  font-family: VT323;
+  font-size:;
   margin-left: 0px;
-  font-size: 20px;
+  font-size: 22.5px;
 }
 
 #pokeName {
-  font-size: -webkit-xxx-large;
-  color: rgb(195, 4, 4);
+  font-size: 75px;
+  color: rgba(252, 221, 14, 0.73);
+  font-family: VT323;
   border-radius: 5px;
   margin-left: 52px;
   text-align: center;
   box-shadow: 7px 5px 5px rgb(62, 61, 61);
+  text-shadow: 2px 2px 4px #000000;
 
 }
 
@@ -90,5 +96,5 @@ img {
   margin-left: 218px;
   margin-top: -50px;
   opacity: .95;
-  z-index: 1;
+  z-index: .8;
 }
