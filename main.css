@@ -6,7 +6,7 @@ background-size: cover;
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 0;
 
 }
@@ -31,6 +31,14 @@ img {
   margin-bottom: -50px;
   margin-left: 75px;
   opacity: 1;
+}
+
+.sub-header {
+  font-family: VT323;
+  font-size: 40px;
+  color: rgba(203, 235, 11, 0.96);
+  margin-left: 20%;
+  margin-top: -18px;
 }
 
 .pk-img:hover {
