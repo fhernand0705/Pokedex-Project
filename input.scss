@@ -10,6 +10,24 @@ background-image: url(Images/back4-img.jpg);
 background-size: cover;
 }
 
+.logo {
+  width: 50%;
+  height: auto;
+  margin: -65px;
+  margin-top: -40px;
+  margin-bottom: -50px;
+  margin-left: 75px;
+  opacity: $primary-opa;
+}
+
+.sub-header {
+  font-family: $main-ff;
+  font-size: 45px;
+  color: rgba(247, 11, 11, 0.96);
+  margin-left: 19%;
+  margin-top: -15px;
+}
+
 .container {
   margin-top: 5%;
   margin-bottom: 0;
@@ -27,24 +45,6 @@ img {
   opacity: $primary-opa;
   transform: scale(1.2, 1.2);
   transition-duration: .7s;
-}
-
-.logo {
-  width: 50%;
-  height: auto;
-  margin: -65px;
-  margin-top: -40px;
-  margin-bottom: -50px;
-  margin-left: 75px;
-  opacity: $primary-opa;
-}
-
-.sub-header {
-  font-family: $main-ff;
-  font-size: 45px;
-  color: rgba(247, 11, 11, 0.96);
-  margin-left: 19%;
-  margin-top: -15px;
 }
 
 .pk-img:hover {
