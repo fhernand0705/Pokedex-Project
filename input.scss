@@ -1,6 +1,4 @@
-//General background styling
-$bg-size: cover;
-$bg-img: url(Images/back4-img.jpg);
+
 
 //Element sizing
 $primary-br: 5px;
@@ -24,12 +22,9 @@ $logo-wth: 50%;
 
 
 //Opacity vars
-$img-opa: .65;
 $primary-opa: 1;
 
-//TBD list
-$transition-duration: .7s;
-$transform: scale(1.2, 1.2);
+
 $primary-z-index: .8;
 
 
@@ -43,7 +38,7 @@ $Abil-Color: rgba(181, 210, 9, 1);
 //Font group
 $main-ff: VT323;
 $primary-fs: 20px;
-$secondary-fs: 45px;
+// $secondary-fs: 45px;
 $modal-fc: white;
 $header-fc: rgba(247, 11, 11, 0.96);
 $pkname-font-color: rgba(252, 221, 14, 0.73);
@@ -57,49 +52,49 @@ $pkname-font-color: rgba(252, 221, 14, 0.73);
 /********************** Styling for the homepage ************/
 
 body {
-background-image: $bg-img;
-background-size: $bg-size;
+background-image: url(Images/back4-img.jpg);
+background-size: cover;
 }
 
 .container {
-  margin-top: $primary-mt;
-  margin-bottom: $primary-mb;
+  margin-top: 5%;
+  margin-bottom: 0;
 
 }
 
 img {
-   width: $img-wth;
-   height: $primary-ht;
-   padding: $img-pd;
-   opacity: $img-opa;
+   width: 100%;
+   height: auto;
+   padding: 5%;
+   opacity: .65;
 }
 
 .pic:hover {
   opacity: $primary-opa;
-  transform: $transform;
-  transition-duration: $transition-duration;
+  transform: scale(1.2, 1.2);
+  transition-duration: .7s;
 }
 
 .logo {
-  width: $logo-wth;
-  height: $primary-ht;
-  margin: $primary-margin;
-  margin-bottom: $secondary-mb;
-  margin-left: $primary-ml;
+  width: 50%;
+  height: auto;
+  margin: -65px;
+  margin-bottom: -50px;
+  margin-left: 75px;
   opacity: $primary-opa;
 }
 
 .sub-header {
   font-family: $main-ff;
-  font-size: $secondary-fs;
-  color: $header-fc;
-  margin-left: $secondary-ml;
-  margin-top: $secondary-mt;
+  font-size: 45px;
+  color: rgba(247, 11, 11, 0.96);
+  margin-left: 19%;
+  margin-top: -15px;
 }
 
 .pk-img:hover {
-  padding: $img-hover-pd;
-  border-radius: $secondary-br;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 /************************ Styling for the Modal*****************/
