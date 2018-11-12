@@ -18,8 +18,8 @@ body {
   font-family: VT323;
   font-size: 45px;
   color: rgba(247, 11, 11, 0.96);
-  margin-left: 19%;
-  margin-top: -15px;
+  margin-left: 50%;
+  margin-top: 0px;
 }
 
 #trainer {
@@ -28,9 +28,17 @@ body {
   background-color: rgba(0, 0, 0, 0.16);
   /* border-radius: 50px; */
   margin-left: 625px;
-  margin-top: -230px;
+  margin-top: -170px;
   padding-bottom: 0px;
   opacity: .9;
+}
+
+#trainer-name {
+  font-family: VT323;
+  font-size: 45px;
+  color: #dedc14;
+  margin-left: 64%;
+  margin-top: -13px;
 }
 
 .container {
