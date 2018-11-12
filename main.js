@@ -143,3 +143,17 @@ function printToDom(poke) {
   pokeAbil1.innerHTML = "<b>Abilities:</b> " + poke.abil1.toUpperCase() + ", " + poke.abil2.toUpperCase();
   image.src = poke.img;
 }
+
+//Adds the typewriter effect to #trainer-Name
+var name = document.getElementById("trainer-name");
+
+var typewriter = new Typewriter(name, {
+    loop: true});
+
+typewriter.typeString('Young Master Fred')
+    pauseFor(2500)
+    deleteAll()
+    typeString('MVP!')
+    pauseFor(2500)
+    deleteAll()
+    start();
