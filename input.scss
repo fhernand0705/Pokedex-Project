@@ -1,51 +1,5 @@
-
-
-//Element sizing
-$primary-br: 5px;
-$secondary-br: 20px;
-$modal-br: 10px;
-$primary-ht: auto;
-$primary-wth: 350px;
-$primary-margin: -65px;
-$primary-mt: 5%;
-$primary-mb: 0;
-$primary-ml: 75px;
-$secondary-ht: 300px;
-$secondary-mb: -50px;
-$secondary-ml: 19%;
-$secondary-mt: -15px;
-$img-wth: 100%;
-$img-pd: 5%;
-$img-hover-pd: 15px;
-$logo-wth: 50%;
-
-
-
-//Opacity vars
-$primary-opa: 1;
-
-
-$primary-z-index: .8;
-
-
-//Background stat colors
-$HP-Color: rgba(173, 32, 1, 0.78);
-$Atk-Color: rgba(41, 205, 7, 0.96);
-$Def-Color: rgba(34, 73, 173, 0.84);
-$Abil-Color: rgba(181, 210, 9, 1);
-
-
-//Font group
 $main-ff: VT323;
-$primary-fs: 20px;
-// $secondary-fs: 45px;
-$modal-fc: white;
-$header-fc: rgba(247, 11, 11, 0.96);
-$pkname-font-color: rgba(252, 221, 14, 0.73);
-
-
-
-
+$primary-opa: 1;
 
 
 
@@ -100,60 +54,59 @@ img {
 /************************ Styling for the Modal*****************/
 
 .modal-body {
-  color: $modal-fc;
-  height: $secondary-ht;
-  border-radius: $modal-br;
-  width: $primary-wth;
+  color: white;
+  height: 300px;
+  border-radius: 10px;
+  width: 350px;
 }
-//
-// #pokeHp {
-//   border-radius: 5px;
-//   background-color: rgba(173, 32, 1, 0.78);
-//   font-family: VT323;
-//   margin-left: 0px;
-//   margin-top: 25px;
-//   font-size: 22.5px;
-// }
-// #pokeAtk {
-//   border-radius: 5px;
-//   background-color: rgba(41, 205, 7, 0.96);
-//   font-family: VT323;
-//   margin-left: 0px;
-//   font-size: 22.5px;
-// }
-// #pokeDef {
-//   border-radius: 5px;
-//   background-color: rgba(34, 73, 173, 0.84);
-//   font-family: VT323;
-//   margin-left: 0px;
-//   font-size: 22.5px;
-// }
-// #pokeAbil1 {
-//   border-radius: 5px;
-//   background-color: rgba(181, 210, 9, 1);
-//   font-family: VT323;
-//   font-size:;
-//   margin-left: 0px;
-//   font-size: 22.5px;
-// }
-//
-// #pokeName {
-//   font-size: 75px;
-//   color: rgba(252, 221, 14, 0.73);
-//   font-family: VT323;
-//   border-radius: 5px;
-//   margin-left: 52px;
-//   text-align: center;
-//   box-shadow: 7px 5px 5px rgb(62, 61, 61);
-//   text-shadow: 2px 2px 4px #000000;
-//
-// }
-//
-// #image {
-//   height: 15%;
-//   margin-bottom: -500px;
-//   margin-left: 218px;
-//   margin-top: -50px;
-//   opacity: .95;
-//   z-index: .8;
-// }
+
+%stat-blocks {
+font-family: $main-ff;
+margin-left: 0px;
+font-size: 22.5px;
+border-radius: 5px;
+}
+
+#pokeHp {
+  background-color: rgba(173, 32, 1, 0.78);
+  @extend %stat-blocks;
+  margin-top: 25px;
+
+}
+
+#pokeAtk {
+  background-color: rgba(41, 205, 7, 0.96);
+  @extend %stat-blocks;
+
+}
+
+#pokeDef {
+  background-color: rgba(34, 73, 173, 0.84);
+  @extend %stat-blocks;
+}
+
+#pokeAbil1 {
+  background-color: rgba(181, 210, 9, 1);
+  @extend %stat-blocks;
+}
+
+#pokeName {
+  font-size: 75px;
+  color: rgba(252, 221, 14, 0.73);
+  font-family: $main-ff;
+  border-radius: 5px;
+  margin-left: 52px;
+  text-align: center;
+  box-shadow: 7px 5px 5px rgb(62, 61, 61);
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+#image {
+  height: 15%;
+  margin-bottom: -500px;
+  margin-left: 218px;
+  margin-top: -50px;
+  opacity: $primary-opa;
+  z-index: .8;
+}

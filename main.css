@@ -52,4 +52,48 @@ img {
   width: 350px;
 }
 
+#pokeAbil1, #pokeDef, #pokeAtk, #pokeHp {
+  font-family: VT323;
+  margin-left: 0px;
+  font-size: 22.5px;
+  border-radius: 5px;
+}
+
+#pokeHp {
+  background-color: rgba(173, 32, 1, 0.78);
+  margin-top: 25px;
+}
+
+#pokeAtk {
+  background-color: rgba(41, 205, 7, 0.96);
+}
+
+#pokeDef {
+  background-color: rgba(34, 73, 173, 0.84);
+}
+
+#pokeAbil1 {
+  background-color: #b5d209;
+}
+
+#pokeName {
+  font-size: 75px;
+  color: rgba(252, 221, 14, 0.73);
+  font-family: VT323;
+  border-radius: 5px;
+  margin-left: 52px;
+  text-align: center;
+  box-shadow: 7px 5px 5px #3e3d3d;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#image {
+  height: 15%;
+  margin-bottom: -500px;
+  margin-left: 218px;
+  margin-top: -50px;
+  opacity: 1;
+  z-index: 0.8;
+}
+
 /*# sourceMappingURL=main.css.map */
