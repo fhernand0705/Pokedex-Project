@@ -3,7 +3,7 @@ $primary-opa: 1;
 
 
 
-/********************** Styling for the homepage ************/
+/******************Styling for the homepage ************/
 
 body {
 background-image: url(Images/back4-img.jpg);
@@ -20,17 +20,42 @@ background-size: cover;
   opacity: $primary-opa;
 }
 
-.sub-header {
-  font-family: $main-ff;
-  font-size: 45px;
-  color: rgba(247, 11, 11, 0.96);
-  margin-left: 19%;
-  margin-top: -15px;
+#trainer {
+  width: 45%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.16);
+  margin-left: 626px;
+  margin-top: -170px;
+  padding-bottom: 0px;
+  opacity: 1;
 }
 
-#trainer {
-  width: 30%;
-  height: auto;
+#trainer-name {
+  font-family: $main-ff;
+  font-size: 35px;
+  color: #fffc02;
+  margin-top: -7px;
+  text-align: right;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid yellow; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto;
+  letter-spacing: .10em;
+  animation:
+   typing 3.5s steps(40, end),
+   blinking .5s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {width: 0 }
+  to {width: 50% }
+}
+
+/* Typewriter cursor effect */
+@keyframes blinking {
+  from, to { border-color: transparent }
+  50% { border-color: yellow; }
 }
 
 .container {
@@ -66,6 +91,7 @@ img {
   width: 350px;
 }
 
+// Sass inheritance feature
 %stat-blocks {
 font-family: $main-ff;
 margin-left: 0px;
