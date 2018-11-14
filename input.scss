@@ -8,12 +8,12 @@ $primary-opa: 1;
 body {
 background-image: url(Images/back4-img.jpg);
 background-size: cover;
+max-width: 100%;
 }
 
 .logo {
   width: 50%;
   height: auto;
-  margin: -65px;
   margin-top: -40px;
   margin-bottom: -50px;
   margin-left: 75px;
@@ -21,10 +21,10 @@ background-size: cover;
 }
 
 #trainer {
-  width: 45%;
+  max-width: 45%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.16);
-  margin-left: 626px;
+  margin-left: 703px;
   margin-top: -170px;
   padding-bottom: 0px;
   opacity: 1;
@@ -32,7 +32,8 @@ background-size: cover;
 
 #trainer-name {
   font-family: $main-ff;
-  font-size: 35px;
+  font-size: 40px;
+  max-width: 82%;
   color: #fffc02;
   margin-top: -7px;
   text-align: right;
@@ -59,7 +60,7 @@ background-size: cover;
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 6%;
   margin-bottom: 0;
 
 }
@@ -75,11 +76,6 @@ img {
   opacity: $primary-opa;
   transform: scale(1.2, 1.2);
   transition-duration: .7s;
-}
-
-.pk-img:hover {
-  padding: 15px;
-  border-radius: 20px;
 }
 
 /************************ Styling for the Modal*****************/
@@ -130,7 +126,7 @@ border-radius: 5px;
   margin-left: 52px;
   text-align: center;
   box-shadow: 7px 5px 5px rgb(62, 61, 61);
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 3px 3px 4px #000000;
 
 }
 
